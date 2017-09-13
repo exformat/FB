@@ -2,6 +2,8 @@
 
 class GetProperty {
 
+
+    //считываем данные из системных файлов и отправляем в класс Property.
     public void setProperty(){
 
         Property property = new Property();
@@ -15,6 +17,8 @@ class GetProperty {
     }
 
 
+    //вытаскиваем значения по одельности.
+    //потому что, я не знаю, так захотел.
     private boolean isWindows(){
 
         String os = System.getProperty("os.name").toLowerCase();
@@ -63,34 +67,26 @@ class GetProperty {
     }
 
     private String getOSVersion() {
-        String os = System.getProperty("os.version");
-        return os;
+        return System.getProperty("os.version");
     }
 
     private String getOSArch(){
 
-        String os = System.getProperty("os.arch");
-
-        return os;
+        return System.getProperty("os.arch");
     }
 
     private String getOSUserName(){
 
-        String os = System.getProperty("user.name");
-        return os;
+        return System.getProperty("user.name");
     }
 
     private String getOSUserHome(){
 
-        String os = System.getProperty("user.home");
-
-        return os;
+        return System.getProperty("user.home");
     }
 
     private String getOSUserDir(){
 
-        String os = System.getProperty("user.dir");
-
-        return os;
+        return System.getProperty("user.dir");
     }
 }
